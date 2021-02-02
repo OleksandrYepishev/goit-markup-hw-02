@@ -1,4 +1,95 @@
-/* основной цвет текста: #757575; */
-/* вторичный цвет текста: #212121;*/
-/* основной цвет фона */
-/* вторичный цвет фона */
+/* Основная палитра */
+:root {
+  --primary-text-color: #757575;
+  --title-text-color: #212121;
+  --primery-white-color: #ffffff;
+  --secondary-white-color: rgba(255, 255, 255, 0.6);
+  --accent: #2196f3;
+  --primary-white-color: #e5e5e5;
+  --primary-black-color: #2f303a;
+  --secondary-white-color: #f5f4fa;
+}
+
+.body {
+  background-color: var(--primary-bg-color);
+  color: var(--primary-text-color);
+}
+
+/* стиль для списков */
+.list {
+  list-style: none;
+}
+
+/* Стиль лого в шапке */
+.list .logo {
+  color: var(--title-text-color);
+}
+
+.logo:hover,
+.logo-title {
+  color: var(--accent);
+}
+
+/* стили для навигации в шапке */
+.site-nav .link {
+  color: var(--title-text-color);
+}
+
+.site-nav .link:hover,
+.site-nav .link:focus {
+  color: var(--accent);
+}
+
+.site-nav .current {
+  color: var(--accent);
+}
+
+.site-nav-contacts .link {
+  column-rule: var(--primary-text-color);
+}
+
+.site-nav-contacts .link:hover,
+.site-nav-contacts .link:focus {
+  color: var(--accent);
+}
+
+/* Герой */
+.hero {
+  background-color: var(--primary-black-color);
+}
+
+.button {
+  color: var(--primery-white-color);
+  background-color: var(--accent);
+}
+
+.hero-title {
+  color: var(--primery-white-color);
+}
+
+/* секции */
+.section-title {
+  color: var(--title-text-color);
+}
+
+.fetures-title {
+  color: var(--title-text-color);
+}
+
+/* секция наша команда */
+.team {
+  background-color: var(--secondary-white-color);
+}
+
+/* футер */
+.footer-page {
+  background-color: var(--primary-black-color);
+}
+
+.address-map {
+  color: var(--primery-white-color);
+}
+
+.address-link {
+  color: var(--secondary-text-color);
+}
