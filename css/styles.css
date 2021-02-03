@@ -5,14 +5,15 @@
   --accent: #2196f3;
   --primary-text-color: #757575;
   --title-text-color: #212121;
-  --primary-bg-color: #e5e5e5;
   --secondary-bg-color: #f5f4fa;
   --black-bg-color: #2f303a;
 }
 
-.body {
-  background-color: var(--primary-bg-color);
-  color: var(-);
+body {
+  background-color: var(--primary-white-color);
+  color: var(--primary-text-color);
+
+  font-family: Roboto, sans-serif;
 }
 
 /* стиль для списков */
@@ -23,6 +24,12 @@
 /* Стиль лого*/
 .logo {
   text-decoration: none;
+  font-family: Raleway, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
 }
 
 .logo.header {
@@ -39,6 +46,15 @@
 }
 
 /* стили для навигации в шапке */
+.site-nav,
+.site-contacts {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  font-family: Roboto, sans-serif;
+}
+
 .site-nav .link {
   color: var(--title-text-color);
   text-decoration: none;
@@ -66,12 +82,24 @@
 /* Герой */
 .hero {
   background-color: var(--black-bg-color);
+  text-align: center;
+  letter-spacing: 0.06em;
+}
+
+.hero-title {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-transform: uppercase;
 }
 
 .button {
   color: var(--primary-white-color);
   background-color: var(--accent);
   text-decoration: none;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.87;
 }
 
 .hero-title {
@@ -81,23 +109,45 @@
 /* секции */
 .section {
   color: var(--primary-text-color);
+  letter-spacing: 0.03em;
 }
 
 .section > .title {
   color: var(--title-text-color);
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
 }
 
-.title {
-  color: var(--title-text-color);
+.section .text {
+  font-size: 14px;
+  line-height: 1.71;
 }
 
-.fetures-title {
+.fetures .title {
   color: var(--title-text-color);
+  font-size: 16px;
+  line-height: 1.14;
+  font-weight: bold;
+  text-transform: uppercase;
 }
 
 /* секция наша команда */
 .team {
   background-color: var(--secondary-bg-color);
+}
+
+.team .title {
+  color: var(--title-text-color);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+}
+
+.team .text {
+  font-size: 16px;
+  line-height: 1.19;
 }
 
 /* футер */
@@ -116,8 +166,7 @@
 /* Страница Портфолио  */
 
 /* Фильтра */
-
-.radiobutton {
+.ra .radiobutton {
   background-color: var(--secondary-bg-color);
   color: var(--title-text-color);
 }
