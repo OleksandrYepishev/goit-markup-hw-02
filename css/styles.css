@@ -52,7 +52,6 @@ body {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
-  font-family: Roboto, sans-serif;
 }
 
 .site-nav .link {
@@ -155,6 +154,12 @@ body {
   background-color: var(--black-bg-color);
 }
 
+.address {
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
+
 .address-map {
   color: var(--primary-white-color);
 }
@@ -166,9 +171,16 @@ body {
 /* Страница Портфолио  */
 
 /* Фильтра */
-.ra .radiobutton {
+.radiobutton {
   background-color: var(--secondary-bg-color);
   color: var(--title-text-color);
+
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  text-align: center;
+  letter-spacing: 0.03em;
+  border: none;
 }
 
 .radiobutton:hover,
@@ -181,10 +193,17 @@ body {
   text-decoration: none;
 }
 
-.porfolio .title {
+.portfolio .title {
   color: var(--title-text-color);
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
 }
 
 .portfolio .text {
   color: var(--primary-text-color);
+  font-size: 16px;
+  line-height: 1.87px;
+  letter-spacing: 0.03em;
 }
