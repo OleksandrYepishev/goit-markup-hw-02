@@ -20,9 +20,9 @@ a {
   text-decoration: none;
 }
 
-ul {
+/* ul {
   list-style: none;
-}
+} */
 
 img {
   display: block;
@@ -77,6 +77,7 @@ img {
 }
 
 .logo.header:hover,
+.logo.footer:hover,
 .logo.title:hover {
   font-family: Oleo Script, cursive;
   font-weight: 400px;
@@ -150,7 +151,8 @@ img {
   letter-spacing: 0.03em;
 }
 
-.section > .title {
+/* секция наши преимущества */
+.section-title {
   color: var(--title-text-color);
   font-weight: bold;
   font-size: 36px;
@@ -163,6 +165,7 @@ img {
   line-height: 1.71;
 }
 
+/* Секция чем мы занимаемся */
 .fetures .title {
   color: var(--title-text-color);
   font-size: 16px;
@@ -205,6 +208,11 @@ img {
 
 .address-link {
   color: var(--alpha-white-color);
+}
+
+.address-link:hover,
+.address-link:focus {
+  color: var(--accent);
 }
 
 /* Страница Портфолио  */
