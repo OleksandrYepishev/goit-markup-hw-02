@@ -112,3 +112,30 @@
 .address-link {
   color: var(--alpha-white-color);
 }
+
+/* Страница Портфолио  */
+
+/* Фильтра */
+
+.radiobutton {
+  background-color: var(--secondary-bg-color);
+  color: var(--title-text-color);
+}
+
+.radiobutton:hover,
+.radiobutton:focus {
+  background-color: var(--accent);
+  color: var(--primary-white-color);
+}
+
+.portfolio .link {
+  text-decoration: none;
+}
+
+.porfolio .title {
+  color: var(--title-text-color);
+}
+
+.portfolio .text {
+  color: var(--primary-text-color);
+}
