@@ -1,18 +1,18 @@
 /* Основная палитра */
 :root {
+  --primary-white-color: #ffffff;
+  --alpha-white-color: rgba(255, 255, 255, 0.6);
+  --accent: #2196f3;
   --primary-text-color: #757575;
   --title-text-color: #212121;
-  --primery-white-color: #ffffff;
-  --secondary-white-color: rgba(255, 255, 255, 0.6);
-  --accent: #2196f3;
-  --primary-white-color: #e5e5e5;
-  --primary-black-color: #2f303a;
-  --secondary-white-color: #f5f4fa;
+  --primary-bg-color: #e5e5e5;
+  --secondary-bg-color: #f5f4fa;
+  --black-bg-color: #2f303a;
 }
 
 .body {
   background-color: var(--primary-bg-color);
-  color: var(--primary-text-color);
+  color: var(-);
 }
 
 /* стиль для списков */
@@ -20,19 +20,28 @@
   list-style: none;
 }
 
-/* Стиль лого в шапке */
-.list .logo {
-  color: var(--title-text-color);
+/* Стиль лого*/
+.logo {
+  text-decoration: none;
+}
+
+.logo.header {
+  color: #000000;
+}
+
+.logo.footer {
+  color: var(--primary-white-color);
 }
 
 .logo:hover,
-.logo-title {
+.logo.title {
   color: var(--accent);
 }
 
 /* стили для навигации в шапке */
 .site-nav .link {
   color: var(--title-text-color);
+  text-decoration: none;
 }
 
 .site-nav .link:hover,
@@ -44,31 +53,41 @@
   color: var(--accent);
 }
 
-.site-nav-contacts .link {
-  column-rule: var(--primary-text-color);
+.site-contacts .link {
+  color: var(--primary-text-color);
+  text-decoration: none;
 }
 
-.site-nav-contacts .link:hover,
-.site-nav-contacts .link:focus {
+.site-contacts .link:hover,
+.site-contacts .link:focus {
   color: var(--accent);
 }
 
 /* Герой */
 .hero {
-  background-color: var(--primary-black-color);
+  background-color: var(--black-bg-color);
 }
 
 .button {
-  color: var(--primery-white-color);
+  color: var(--primary-white-color);
   background-color: var(--accent);
+  text-decoration: none;
 }
 
 .hero-title {
-  color: var(--primery-white-color);
+  color: var(--primary-white-color);
 }
 
 /* секции */
-.section-title {
+.section {
+  color: var(--primary-text-color);
+}
+
+.section > .title {
+  color: var(--title-text-color);
+}
+
+.title {
   color: var(--title-text-color);
 }
 
@@ -78,18 +97,18 @@
 
 /* секция наша команда */
 .team {
-  background-color: var(--secondary-white-color);
+  background-color: var(--secondary-bg-color);
 }
 
 /* футер */
 .footer-page {
-  background-color: var(--primary-black-color);
+  background-color: var(--black-bg-color);
 }
 
 .address-map {
-  color: var(--primery-white-color);
+  color: var(--primary-white-color);
 }
 
 .address-link {
-  color: var(--secondary-text-color);
+  color: var(--alpha-white-color);
 }
