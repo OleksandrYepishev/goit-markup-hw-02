@@ -59,6 +59,10 @@ img {
   letter-spacing: 0.03em;
 }
 
+.logo:focus {
+  color: var(--accent);
+}
+
 .logo.title {
   color: var(--accent);
   font-family: Raleway, sans-serif;
@@ -74,17 +78,6 @@ img {
 
 .logo.footer {
   color: var(--primary-white-color);
-}
-
-.logo.header:hover,
-.logo.footer:hover,
-.logo.title:hover {
-  font-family: Oleo Script, cursive;
-  font-weight: 400px;
-  font-style: normal;
-  font-size: 26px;
-  line-height: 1.38;
-  letter-spacing: 0.03em;
 }
 
 /* стили для навигации в шапке */
@@ -168,7 +161,7 @@ img {
 /* Секция чем мы занимаемся */
 .fetures .title {
   color: var(--title-text-color);
-  font-size: 16px;
+  font-size: 14px;
   line-height: 1.14;
   font-weight: bold;
   text-transform: uppercase;
@@ -200,6 +193,7 @@ img {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
+  font-style: normal;
 }
 
 .address-map {
